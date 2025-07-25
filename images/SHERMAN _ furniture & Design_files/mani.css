@@ -1,0 +1,300 @@
+:root {
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 10000vh;
+  background-color: brown;
+}
+
+.teko-font {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* start animated bar  */
+.icon-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0px;
+  position: relative;
+  width: 50px;
+}
+
+.bar {
+  width: 10px;
+  height: 3px;
+  background-color: black;
+  margin-bottom: 5px;
+  transition: all 0.3s;
+}
+.navbar-brand a {
+  transition: 0.5s;
+}
+.navbar-brand a:hover {
+  -webkit-text-fill-color: orangered;
+}
+
+.bar:first-of-type {
+  width: 100%;
+}
+
+.bar:nth-of-type(2) {
+  width: 75%;
+}
+
+.bar:last-of-type {
+  width: 50%;
+}
+
+.icon-bar:hover .bar:first-of-type {
+  animation: barone 1s linear 0s infinite, barcolor 1.5s linear 0s infinite;
+}
+
+.icon-bar:hover .bar:nth-of-type(2) {
+  animation: bartwo 1s linear 0s infinite, barcolor 1.5s linear 0.5s infinite;
+}
+
+.icon-bar:hover .bar:last-of-type {
+  animation: barthree 1s linear 0s infinite, barcolor 1.5s linear 1s infinite;
+}
+
+@keyframes barone {
+  0%,
+  100% {
+    width: 100%;
+  }
+  25% {
+    width: 75%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+}
+
+@keyframes bartwo {
+  0%,
+  100% {
+    width: 75%;
+  }
+  25% {
+    width: 100%;
+  }
+  50% {
+    width: 75%;
+  }
+  75% {
+    width: 50%;
+  }
+}
+
+@keyframes barthree {
+  0%,
+  100% {
+    width: 50%;
+  }
+  25% {
+    width: 75%;
+  }
+  50% {
+    width: 100%;
+  }
+  75% {
+    width: 75%;
+  }
+}
+
+@keyframes barcolor {
+  0% {
+    background-color: black;
+  }
+  100% {
+    background-color: orangered;
+  }
+}
+
+/* end animated bar  */
+
+/* Start nav bar lis effects  */
+.navbar {
+  transition: 0.5s;
+}
+nav ul li a.under::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 16px);
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  background-color: orangered;
+  transition: 0.5s;
+  opacity: 0;
+  bottom: -10px;
+}
+nav ul li:hover a.under::before,
+nav ul li a.under.active::before {
+  bottom: 0;
+  opacity: 1;
+}
+
+@media (min-width: 992px) {
+  nav ul li.icon {
+    position: relative;
+    transform: scale(1);
+    transition: 0.5s;
+  }
+  nav ul li.icon:hover {
+    transform: scale(1.2);
+  }
+  nav ul li.cart::before {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    background-color: black;
+    height: 5px;
+    width: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 46%;
+  }
+  nav ul li.cart:hover::before {
+    animation: cart 1s ease-in-out 0s forwards;
+  }
+}
+@keyframes cart {
+  0%,
+  100% {
+    top: 43%;
+  }
+  50% {
+    top: 0%;
+  }
+}
+/* End nav bar lis effects  */
+.ulss{
+
+}
+.ulss li {
+
+}
+.ulss li {
+
+}
+.ulss li a {
+
+}
+.ulss li a i {
+
+}
+.greenhover{
+  transition: 0.5s;
+}
+.greenhover:hover ,
+.greenhover .active{
+  color: #50BA87  !important;
+}
+.greenbghover{
+  transition: 0.5s;
+}
+.greenbghover:hover ,
+.greenbghover.active{
+  color: white !important;
+  background-color: #50BA87  !important;
+}
+.orangedhover{
+  transition: 0.5s;
+}
+.orangedhover:hover{
+  color: orangered  !important;
+}
+
+/* left sidebar  */
+.barchange svg {
+  transform: translate(-50% , -50% ) !important;
+}
+.barchange svg:first-of-type {
+  transition: 0.23s;
+  transform: translate(-50% , -50% ) rotate(0deg) !important;
+  opacity: 1;
+
+}
+.barchange svg:last-of-type {
+  transition: 0.30s ;
+  opacity: 0;
+  transform:translate(-50% , -50% ) rotate(-90deg) !important;
+}
+ .barchange.active  svg:first-of-type {
+  transform: translate(-50% , -50% ) rotate(90deg) !important;
+  opacity: 0;
+}
+.barchange.active svg:last-child {
+  transform:translate(-50% , -50% )  rotate(0deg) !important;
+  opacity: 1;
+}
+
+
+/* Scroller */
+
+/* Scroller handle */
+.offcanvas-body{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  border-radius: 5px;
+}
+.offcanvas-body {
+  direction: rtl;
+  overflow:auto;
+}
+
+.offcanvas-body::-webkit-scrollbar {
+  width: 5px;
+}
+
+.offcanvas-body::-webkit-scrollbar-track {
+  margin-top: 12px;
+  border: none;
+  background-color:#E1E1E1;
+}
+
+.offcanvas-body::-webkit-scrollbar-thumb {
+  background-color: #E6A7A7;
+  border: none;
+}
+
+/* Right offcanvas  */
+li img {
+  position: relative;
+}
+li img::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: black;
+}
+.gallery {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* لون الشاشة السوداء مع شفافية 50% */
+  z-index: 1; /* تأكد من وضع الشاشة السوداء فوق الصورة */
+}

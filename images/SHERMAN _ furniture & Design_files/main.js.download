@@ -1,0 +1,78 @@
+
+let nav = document.querySelector('.navbar');
+let canavas = document.querySelectorAll('.offcanvas');
+window.onscroll = function(){
+  nav.classList.replace('p-3','p-1');
+  canavas.forEach(canava => {
+    canava.style.marginTop= `  78px `;
+  });
+  if(window.scrollY  === 0 ) {
+    nav.classList.replace('p-1','p-3');
+    canavas.forEach(canava => {
+      canava.style.marginTop= ` 102px `;
+    });
+  }
+}
+
+
+// left sidebar 
+let leftsidebarbotton = document.querySelector('.leftsidebarbuttom');
+console.log(leftsidebarbotton)
+leftsidebarbotton.onclick = function() {
+  leftsidebarbotton.children[0].classList.toggle('active');
+}
+
+// right sidebar 
+
+// model fade 
+
+// let ModelFadeImg = document.querySelector('.imgfad')
+
+// console.log(ImgInRightSideBar);
+// ImgInRightSideBar.forEach(imgg => {
+//   imgg.addEventListener('click', function(){
+//     let img = document.createElement('img');
+//     img.setAttribute('src' , `images/gallery-imag${imgg.getAttribute('id')}-330x240.jpg`);
+//     console.log(img);
+//     ParentImgModel.appendChild(img);
+//         console.log(ParentImgModel)
+//   })
+// })
+
+
+
+let ParentImgModel =document.querySelector('.modal-content-img');
+let ImgInRightSideBar = document.querySelectorAll('.offcanvas-end img');
+const modalimage = document.getElementById('imagemodel');
+// Add click event listeners to all images inside the container
+ImgInRightSideBar.forEach(image => {
+  image.setAttribute('data-bs-toggle', 'offcanvas');
+  image.addEventListener('click', function() {
+
+        const img = document.createElement('img');
+        // Set the source of the new image to the clicked image source
+        img.src = this.src;
+        // Append the new image to the modal
+        ParentImgModel.innerHTML = ''; 
+
+        ParentImgModel.appendChild(img);
+        // Display the modal
+        document.getElementById('imagemodel').classList.add('show');
+        document.getElementById('imagemodel').setAttribute('aria-modal', 'true');
+        document.getElementById('imagemodel').setAttribute('style', 'display: block; background: rgba(0, 0, 0, 0.5);');
+        
+        ParentImgModel.style.flex = '1';
+        img.style = 'width: -webkit-fill-available;';
+});
+});
+modalimage.addEventListener('click', function(event) {
+  if (event.target === modalimage) {
+    modalimage.classList.remove('show');
+    modalimage.setAttribute('aria-modal', 'false');
+    modalimage.setAttribute('style', 'display: none;');
+  }
+});
+
+
+
+// انت هتخلي لما تدوس على الزرار يبدا يشوف الفانكشن بتاعة الاسكرول اللي هيتطبق فيها فكرة اني لا اسكرول الاسكرول يشتغل
