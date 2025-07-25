@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+/* buttons style  */
+
+.buttomstyleone {
+  padding: 15px 25px ;
+  background-color: transparent;
+  width: fit-content;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  transition: 0.15s ease-in-out;
+  font-size: 16px;
+}
+.buttomstyleone::after {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  left: 50% ;
+  top: 50%;
+  transform: translate(-50% , -50%);
+  width: calc(105% - 2px);
+  height: calc(105% - 2px);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  transition: 0.40s ease-in-out;
+  z-index: -1;
+}
+.buttomstyleone::before {
+  content: '';
+  position: absolute;
+  opacity: 1;
+  left: 50% ;
+  top: 50%;
+  transform: translate(-50% , -50%);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #50BA87;
+  transition: 0.25s ;
+}
+.buttomstyleone:hover::before{
+  width: 90%;
+  height:90%;
+  opacity: 0;
+}
+.buttomstyleone:hover::after{
+  color: black;
+  opacity: 1;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+}
+.buttomstyleone:hover{
+  background-color: transparent;
+  color: black;
+}
+
+/* style two  */
+.buttomstyletwo {
+  padding: 15px 25px ;
+  background-color: transparent;
+  width: fit-content;
+  color: rgb(0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  transition: 0.25s;
+  font-size: 16px;
+}
+.buttomstyletwo::after {
+  content: '';
+  position: absolute;
+  opacity: 0;
+
+  left: 55%;
+  top: 45%;
+  transform: translate(-50% , -50%);
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(230, 96, 7);
+  color: black;
+  transition: 0.25s ease-in-out;
+  z-index: -1;
+}
+.buttomstyletwo::before {
+  content: '';
+  position: absolute;
+  opacity: 1;
+  left: 50% ;
+  top: 50%;
+  background-color: transparent;
+  transform: translate(-50% , -50%);
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  border: 2px solid black;
+  color: black;
+  z-index: -1;
+  transition: 0.25s ease-in-out;
+}
+.buttomstyletwo:hover::before{
+  left: 30%;
+  top: 70%;
+  opacity: 0;
+}
+.buttomstyletwo:hover::after{
+  color: black;
+  left: 50% ;
+  top: 50%;
+  opacity: 1;
+}
+.buttomstyletwo:hover{
+  background-color: transparent;
+  color: rgb(230, 96, 7);
+}
+/* button styles  */
+
+/* style three  */
+.buttomstylethree {
+  padding: 15px 25px ;
+  background-color: transparent;
+  width: fit-content;
+  color:white;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+.buttomstylethree::after {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% , -50%);
+  width: 70%;
+  height: 100%;
+  background-color: #eb6e6e;
+  transition: 0.2s ease;
+  z-index: -1;
+}
+.buttomstylethree:hover::after{
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.buttomstylethree::before {
+  content: '';
+  position: absolute;
+  opacity: 1;
+  left: 50% ;
+  top: 50%;
+  background-color: #50BA87;
+  transform: translate(-50% , -50%);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+
+/* button styles  */
+
+
+  </style>
+</head>
+<body>
+  <div class="buttomstyleone">
+    CHECKOUT 
+  </div>
+  <h3></h3>
+  <div class="buttomstyletwo">
+    CHECKOUT 
+  </div>
+  <div class="buttomstylethree">
+    CHECKOUT 
+  </div>
+</body>
+</html>

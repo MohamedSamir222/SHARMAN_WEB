@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isotope Example</title>
+  <style>
+    .grid-item {
+      width: 25%;
+      padding: 10px;
+      margin: 10px;
+      color: white;
+    }
+    .flower {
+      background-color: rebeccapurple;
+    }
+    .fruits {
+      background-color: blue;
+    }
+    .brid {
+      background-color: aquamarine;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="filter">
+      <div data-name="*" class="btn btn-info">All</div>
+      <div data-name=".fruits" class="btn btn-primary">Fruits</div>
+      <div data-name=".flower" class="btn btn-danger">Flower</div>
+      <div data-name=".brid" class="btn btn-success">Brid</div>
+    </div>
+    <div class="grid">
+      <div class="grid-item flower">Rose</div>
+      <div class="grid-item brid">Rose</div>
+      <div class="grid-item fruits">Rose</div>
+      <div class="grid-item flower">Rose</div>
+      <div class="grid-item brid">Rose</div>
+      <div class="grid-item flower">Rose</div>
+      <div class="grid-item fruits">Rose</div>
+      <div class="grid-item flower">Rose</div>
+      <div class="grid-item brid">Rose</div>
+      <div class="grid-item fruits">Rose</div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <script>
+  let $grid = $('.grid').isotope({
+    itemSelector : '.grid-item',
+    layoutMode: 'fitRows'
+  })
+  $('.filter div' ).on('click',function(){
+    let value = $(this).attr('data-name')
+    $grid.isotope({
+    filter: value
+  })
+  })
+  </script>
+</body>
+</html>

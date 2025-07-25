@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHERMAN | furniture & Design</title>
+    <link rel="stylesheet" href="css/sal.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="images/fotor-202402072222-modified.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="lightGallery-master/lightGallery-master/dist/css/lightgallery-bundle.css">
+    <link rel="stylesheet" href="lightGallery-master/lightGallery-master/dist/css/lg-autoplay.css">
+    <link rel="stylesheet" href="lightGallery-master/lightGallery-master/dist/css/lg-fullscreen.css">
+    <link rel="stylesheet" href="lightGallery-master/lightGallery-master/dist/css/lg-zoom.css">
+    <link rel="stylesheet" href="lightGallery-master/lightGallery-master/dist/css/lg-thumbnail.css">
+    <link rel="stylesheet" href="lightGallery-master/lightGallery-master/dist/css/lg-rotate.css">
+    <link rel="stylesheet" href="lightGallery-master/lightGallery-master/dist/css/lg-share.css">
+    <link rel="stylesheet" href="lightGallery-master/lightGallery-master/dist/css/lg-transitions.css">
+    <link rel="stylesheet" href="css/sal.css">
+    <link rel="stylesheet" href="css/mani.css" />
+    <style>
+      #title {
+        position: relative;
+      }
+      #title:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+      }
+      .barchange svg {
+        transform: translate(-50%, -50%) !important;
+      }
+      .barchange svg:first-of-type {
+        transition: 0.23s;
+        transform: translate(-50%, -50%) rotate(0deg) !important;
+        opacity: 1;
+      }
+      .barchange svg:last-of-type {
+        transition: 0.3s;
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(-90deg) !important;
+      }
+
+      button .barchange.active svg:first-of-type {
+        transform: translate(-50%, -50%) rotate(90deg) !important;
+        opacity: 0;
+      }
+
+      button .barchange.active svg:last-child {
+        transform: translate(-50%, -50%) rotate(0deg) !important;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- start navigation  -->
+
+    <nav
+      class="navbar position-sticky top-0 navbar-expand-lg bg-body-tertiary p-3 bg-light"
+      style="z-index: 998;"
+    >
+      <div
+        class="flex-nowrap justify-content-start d-flex gap-md-5 gap-1 p-0 p-sm-auto custom-container"
+      >
+        <button
+          class="navbar-toggler my-auto leftsidebarbuttom btn shadow-none d-md-flex d-lg-none justify-content-center mx-3 mx-lg-0 align-items-center"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvas"
+          aria-controls="offcanvasScrolling"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="barchange position-relative fs-2">
+            <i
+              class="fa-solid fa-bars position-absolute top-50 start-50 translate-middle"
+            ></i>
+            <i
+              class="fa-solid fa-arrow-left position-absolute top-50 start-50 translate-middle"
+            ></i>
+          </div>
+        </button>
+        <a
+          class="navbar-brand text-dark d-hidden d-lg-block me-0 me-md-auto"
+          href="#"
+          style="
+            font-weight: 900;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 40px;
+          "
+          >SHERMAN</a
+        >
+
+        <div
+          class="collapse navbar-collapse justify-content-end order-lg-2 order-3"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="navbar-nav mb-2 mb-lg-0"
+            style="font-size: 18px; line-height: 25px"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link p-3 text-dark active position-relative under"
+                aria-current="page"
+                href="#"
+              >
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link p-3 text-dark position-relative under"
+                aria-current="page"
+                href="#"
+              >
+                About Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link p-3 text-dark position-relative under"
+                aria-current="page"
+                href="#"
+              >
+                Typography
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link p-3 text-dark position-relative under"
+                aria-current="page"
+                href="#"
+                >Contact Us</a
+              >
+            </li>
+            <li class="nav-item icon cart position-relative">
+              <a
+                class="nav-link p-3 scalee scalee-cart fs-4 text-dark"
+                aria-current="page"
+                data-bs-toggle="scalee"
+                href="#"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+
+              <div class="cart-bag position-fixed w-40 bg-light p-5">
+                <div class="title">
+                  <span class="teko-font fw-light fs-2 mb-4"
+                    >IN CART: 2 PRODUCTS</span
+                  >
+                  <span
+                    class="teko-font fs-5 d-flex justify-content-start gap-4 align-items-center"
+                    >TOTAL PRICE:
+                    <div class="totalprice">355$</div></span
+                  >
+                </div>
+                <hr />
+                <div class="cart-item d-flex flex-column gap-4">
+                  <div class="row">
+                    <div class="col-4">
+                      <img src="images/chiar.png" alt="" />
+                    </div>
+                    <div class="col-8">
+                      <h5 class="teko-font fs-4">CB2 COUP GREY OFFICE CHAIR</h5>
+                      <div
+                        class="number-of-item d-flex justify-content-around align-items-center"
+                      >
+                        <div class="minus btn btn-outline-danger">
+                          <i class="fa-solid fa-minus"></i>
+                        </div>
+                        <div
+                          class="num teko-font fs-5"
+                          style="user-select: none"
+                        >
+                          1
+                        </div>
+                        <div class="plus btn btn-outline-success">
+                          <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div
+                          class="price teko-font fs-5"
+                          data-price="300"
+                          style="width: 60px; user-select: none"
+                        >
+                          300$
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-4">
+                      <img src="images/lamp.png" alt="" />
+                    </div>
+                    <div class="col-8">
+                      <h5 class="teko-font fs-4">IKEA TERTIAL WORK LAMP</h5>
+                      <div
+                        class="number-of-item d-flex justify-content-around align-items-center"
+                      >
+                        <div class="minus btn btn-outline-danger">
+                          <i class="fa-solid fa-minus"></i>
+                        </div>
+                        <div
+                          class="num teko-font fs-5"
+                          style="user-select: none"
+                        >
+                          1
+                        </div>
+                        <div class="plus btn btn-outline-success">
+                          <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div
+                          class="price teko-font fs-5"
+                          data-price="55"
+                          style="width: 60px; user-select: none"
+                        >
+                          55$
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div
+                  class="buttoms d-flex justify-content-around align-items-center"
+                >
+                  <div class="buttomstyletwo fw-normal">GO TO CART</div>
+                  <div class="buttomstyleone fw-bolder">CHECKOUT</div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item icon icon-search">
+              <a
+                class="nav-link scalee p-3 fs-4 text-dark"
+                data-bs-toggle="scalee"
+                aria-current="page"
+                href="#"
+                ><i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-circle-xmark"></i>
+              </a>
+              <div class="input-group shadow border-0 search-bar">
+                <input
+                  class="p-2 flex-fill border-0"
+                  style="outline: none"
+                  type="text"
+                />
+                <button class="btn shadow-none fs-5" type="button">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </li>
+            <li class="nav-item icon icon-share text-denger">
+              <a
+                class="nav-link p-3 scalee fs-4 text-dark"
+                data-bs-toggle="scalee"
+                aria-current="page"
+                href="#"
+                ><i class="fa-solid fa-share-nodes"></i
+              ></a>
+              <div class="icons">
+                <a href="www.instagram.com" class="text-dark">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="www.facebook.com" class="text-dark">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="www.google.com" class="text-dark">
+                  <i class="fa-brands fa-google-plus-g"></i>
+                </a>
+                <a href="www.x.com" class="text-dark">
+                  <i class="fa-solid fa-x"></i>
+                </a>
+                <a href="#" class="text-dark">
+                  <i class="fa-solid fa-arrow-up arrow-up"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="ms-auto threebars navbar-brand righticon order-2 order-lg-3 position-relative"
+          data-bs-target="#offcanvasright"
+          data-bs-toggle="offcanvas"
+          type="button"
+
+        >
+          <div
+            class="icon-bar justify-self-end active position-absolute start-50 top-50 translate-middle"
+          >
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <div
+            class="xicon justify-self-end position-absolute start-50 top-50 translate-middle"
+          >
+            <span><span></span></span>
+            <span><span></span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end navigation  -->
+    <!-- ************************************************************************************************************************ -->
+    <!-- Start swiper  -->
+    <!-- Slider main container -->
+    <div class="custom-container mb-5" id="Swiper" >
+      <div class="swiper container-fluid">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="images/slider-1-slide-1-1770x742.jpg" alt="" />
+            <div
+              class="text position-absolute start-50 top-50 translate-middle w-75 w-md-50 text-center text-light"
+            >
+              <div
+                class="title display-2 display-md-1 teko-font my-3 hidden-text-right"
+              >
+                Innovative and affordable
+              </div>
+              <p class="para hidden-text-left">
+                Our team uses innovations combined with customized interior
+                planning to deliver the best interior design for your home or
+                office while saving costs.
+              </p>
+              <div class="buttomstylethree hidden-text-up">GET IN TOUCH</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slider-1-slide-2-1770x742.jpg" alt="" />
+            <div
+              class="text position-absolute start-50 top-50 translate-middle w-75 w-md-50 text-center text-light"
+            >
+              <div
+                class="title display-2 display-md-1 teko-font my-3 hidden-text-right"
+              >
+                Committed and professional
+              </div>
+              <p class="para hidden-text-left">
+                All our designers and architects are completely committed to the
+                end result, while being fully professional in all aspects of
+                interior planning and design.
+              </p>
+              <div class="buttomstylethree hidden-text-up">GET IN TOUCH</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slider-1-slide-3-1770x742.jpg" alt="" />
+            <div
+              class="text position-absolute start-50 top-50 translate-middle w-75 w-md-25 text-center text-light"
+            >
+              <div
+                class="title display-2 display-md-1 teko-font my-3 hidden-text-right"
+              >
+                Harmonious and cozy
+              </div>
+              <p class="para hidden-text-left">
+                We develop individual room concepts for private and commercial
+                use. Our team focuses on the interior design of private living
+                rooms, hotels, offices, and more.
+              </p>
+              <div class="buttomstylethree hidden-text-up">GET IN TOUCH</div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-pagination-fraction"></div>
+    </div>
+
+    <!-- end swiper  -->
+    <!-- ****************************************************************************************************************************** -->
+    <!-- start services -->
+    <div class="services container my-5 text-center">
+      <div class="row pt-3 pb-5 justify-content-between">
+        <div class="services-image col-lg-5 col-12 position-relative p-5">
+          <span class="" style="width: fit-content">
+            <img src="images/index-1-513x561.jpg" class="img-fluid" alt=""
+          /></span>
+        </div>
+        <div class="col-lg-7 col-12 postion-relative">
+          <div
+            class="row gap-5 services-row justify-content-lg-around justify-content-center"
+          >
+            <div
+              class="col-8 col-lg-5 postion-relative d-flex flex-column px-4 py-5 justify-content-around align-items-center"
+              data-sal="slide-right"
+              data-sal-duration="1000"
+              
+            >
+              <div class="title display-4 fw-light teko-font">
+                SEE ALL <span class="d-block">SERVICES</span>
+              </div>
+              <span
+                class="line bg-secondary mt-3 mb-4"
+                style="height: 2px"
+              ></span>
+              <div class="buttomstyletwo w-100">ALL SERVICES</div>
+            </div>
+
+            <div
+              class="services-box text-center col-8 col-lg-5 d-flex flex-column px-4 py-5 justify-content-around align-items-center"
+              data-sal="slide-right"
+              data-sal-duration="1000"
+              data-sal-delay="300"
+              
+            >
+              <div class="icon-services my-4">
+                <i class="fa-solid fa-crop display-5"></i>
+              </div>
+              <h2 class="teko-font">SPACE PLANNING</h2>
+              <div
+                class="line bg-secondary mt-3 mb-4"
+                style="height: 2px"
+              ></div>
+              <p class="text-secondary px-4">
+                We create better interior experiences through space planning
+                services.
+              </p>
+            </div>
+
+            <div
+              class="services-box text-center col-8 col-lg-5 d-flex flex-column px-4 py-5 justify-content-around align-items-center"
+              data-sal="slide-right"
+              data-sal-duration="1000"
+              
+            >
+              <div class="icon-services my-4">
+                <i class="fa-solid fa-paintbrush display-5"></i>
+              </div>
+              <h2 class="teko-font">INTERIOR DESIGN</h2>
+              <div
+                class="line bg-secondary mt-3 mb-4"
+                style="height: 2px"
+              ></div>
+              <p class="text-secondary px-4">
+                We develop and implement better interior design concepts for
+                you.
+              </p>
+            </div>
+
+            <div
+              class="services-box text-center col-8 col-lg-5 d-flex flex-column px-4 py-5 justify-content-around align-items-center"
+              data-sal="slide-right"
+              data-sal-delay="300"
+              data-sal-duration="1000"
+              
+            >
+              <div class="icon-services my-4">
+                <i class="fa-regular fa-comments display-5"></i>
+              </div>
+              <h2 class="teko-font">CONSULTATIONS</h2>
+              <div
+                class="line bg-secondary mt-3 mb-4"
+                style="height: 2px"
+              ></div>
+              <p class="text-secondary px-4">
+                Our specialists are ready to consult you on any interior design
+                related topic
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end services -->
+    <!-- ****************************************************************************************************************************** -->
+    <!-- Start Last projects -->
+    <div class="last-projects text-center my-5 custom-container d-flex flex-column justify-content-center align-items-center">
+      <div class="display-4 teko-font my-3">LATEST PROJECTS</div>
+      <p class="text-secondary " style="max-width: 520px;">
+        In our portfolio you can browse the latest interior designs created in
+        various styles and for different purposes. Our qualified design
+        professionals are always ready to design something spectacular for you,
+        even if it’s a residential interior improvement.
+      </p>
+      <div class="last-filter d-flex flex-column flex-sm-row  justify-content-around my-4 ">
+        <div data-name="*" class=" border-end px-lg-5 px-3 text-secondary teko-font fs-5 active">All</div>
+        <div data-name=".APARTMENTS" class=" border-end px-lg-5 px-3 text-secondary teko-font fs-5">APARTMENTS</div>
+        <div data-name=".OFFICES" class=" border-end px-lg-5 px-3 text-secondary teko-font fs-5">OFFICES</div>
+        <div data-name=".CORPORATE" class=" border-end px-md-5 px-3  text-secondary teko-font fs-5">CORPORATE DESIGNS</div>
+      </div>
+
+      <div class="last-grid  row pt-3 pb-5 justify-content-center position-relative " style="width: 100%; overflow: hidden; " >
+        <div class="last-grid-item CORPORATE col-12 col-md-6 col-lg-4 col-xxl-3 hidden-text-right delay-000 " 
+>
+          <div class="position-relative">
+            <div class="info position-absolute start-50 d-flex justify-content-center flex-column align-items-center p-5 top-50 translate-middle z-2 " style="width: calc(100% - 40px) ;height: calc(100% - 40px ); background-color: white;">
+              <div class="header d-flex gap-3 justify-content-start align-items-center">
+                <a class="item" href="images/fullwidth-gallery-1-420x350.jpg">
+                  <img src="images/fullwidth-gallery-1-420x350.jpg" style="display: none;" alt="">
+                  <i class="fa-solid fa-magnifying-glass-plus fs-3"></i></a>
+                  <h5 class="greenhover"> 379 HARVEY RD</h5>
+                </div>
+                <p class="text-secondary text-start py-3">We work hard on every project to deliver top-notch interior design concepts that satisfy your wishes.
+                </p>
+              </div>
+              <img src="images/fullwidth-gallery-1-420x350.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="last-grid-item OFFICES col-12 col-md-6 col-lg-4 col-xxl-3 hidden-text-right delay-200" >
+            <div class="position-relative">
+              <div class="info position-absolute start-50 d-flex justify-content-center flex-column align-items-center p-5 top-50 translate-middle z-2 " style="width: calc(100% - 40px) ;height: calc(100% - 40px ); background-color: white;">
+                <div class="header d-flex gap-3 justify-content-start align-items-center">
+                  <a class="item" href="images/fullwidth-gallery-2-420x350.jpg">
+                  <img src="images/fullwidth-gallery-2-420x350.jpg" style="display: none;" alt="">
+                  <i class="fa-solid fa-magnifying-glass-plus fs-3"></i></a>
+                <h5 class="greenhover">64 JAMES AVE</h5>
+              </div>
+              <p class="text-secondary text-start py-3">We work hard on every project to deliver top-notch interior design concepts that satisfy your wishes.
+              </p>
+            </div>
+            <img src="images/fullwidth-gallery-2-420x350.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="last-grid-item  APARTMENTS col-12 col-md-6 col-lg-4 col-xxl-3 hidden-text-right delay-400" 
+>
+          <div class="position-relative"> 
+            <div class="info position-absolute start-50 d-flex justify-content-center flex-column align-items-center p-5 top-50 translate-middle z-2 " style="width: calc(100% - 40px) ;height: calc(100% - 40px ); background-color: white;">
+              <div class="header d-flex gap-3 justify-content-start align-items-center">
+                <a  class="item" href="images/fullwidth-gallery-3-420x350.jpg">
+                  <img src="images/fullwidth-gallery-3-420x350.jpg" style="display: none;" alt="">
+                  <i class="fa-solid fa-magnifying-glass-plus fs-3"></i></a>
+                <h5 class="greenhover"> 861 E. OKLAHOMA DR</h5>
+              </div>
+              <p class="text-secondary text-start py-3">We work hard on every project to deliver top-notch interior design concepts that satisfy your wishes.
+              </p>
+            </div>
+            <img src="images/fullwidth-gallery-3-420x350.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="last-grid-item  CORPORATE col-12 col-md-6  col-lg-4 col-xxl-3 hidden-text-right delay-600" 
+>
+          <div class="position-relative">
+            <div class="info position-absolute start-50 d-flex justify-content-center flex-column align-items-center p-5 top-50 translate-middle z-2 " style="width: calc(100% - 40px) ;height: calc(100% - 40px ); background-color: white;">
+              <div class="header d-flex gap-3 justify-content-start align-items-center">
+                <a class="item" href="images/fullwidth-gallery-4-420x350.jpg">
+                  <img src="images/fullwidth-gallery-4-420x350.jpg" style="display: none;" alt="">
+                  <i class="fa-solid fa-magnifying-glass-plus fs-3"></i></a>
+                <h5 class="greenhover"> 14 PULASKI STR</h5>
+              </div>
+              <p class="text-secondary text-start py-3">We work hard on every project to deliver top-notch interior design concepts that satisfy your wishes.
+              </p>
+            </div>
+            <img src="images/fullwidth-gallery-4-420x350.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="last-grid-item OFFICES col-12 col-md-6 col-lg-4 col-xxl-3 hidden-text-left delay-00"
+>
+          <div class="position-relative">
+            <div class="info position-absolute start-50 d-flex justify-content-center flex-column align-items-center p-5 top-50 translate-middle z-2 " style="width: calc(100% - 40px) ;height: calc(100% - 40px ); background-color: white;">
+              <div class="header d-flex gap-3 justify-content-start align-items-center">
+                <a class="item" href="images/fullwidth-gallery-5-420x350.jpg">
+                  <img src="images/fullwidth-gallery-5-420x350.jpg" style="display: none;" alt="">
+                  <i class="fa-solid fa-magnifying-glass-plus fs-3"></i></a>
+                <h5 class="greenhover">  8381 PEG SHOP STR</h5>
+              </div>
+              <p class="text-secondary text-start py-3">We work hard on every project to deliver top-notch interior design concepts that satisfy your wishes.
+              </p>
+            </div>
+            <img src="images/fullwidth-gallery-5-420x350.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="last-grid-item APARTMENTS col-12 col-md-6 col-lg-4 col-xxl-3 hidden-text-left delay-200" >
+          <div class="position-relative">
+            <div class="info position-absolute start-50 d-flex justify-content-center flex-column align-items-center p-5 top-50 translate-middle z-2 " style="width: calc(100% - 40px) ;height: calc(100% - 40px ); background-color: white;">
+              <div class="header d-flex gap-3 justify-content-start align-items-center">
+                <a class="item" href="images/fullwidth-gallery-6-420x350.jpg">
+                  <img src="images/fullwidth-gallery-6-420x350.jpg" style="display: none;" alt="">
+                  <i class="fa-solid fa-magnifying-glass-plus fs-3"></i></a>
+                <h5 class="greenhover"> 830 BRIDGE STR</h5>
+              </div>
+              <p class="text-secondary text-start py-3">We work hard on every project to deliver top-notch interior design concepts that satisfy your wishes.
+              </p>
+            </div>
+            <img src="images/fullwidth-gallery-6-420x350.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="last-grid-item CORPORATE col-12 col-md-6 col-lg-4 col-xxl-3 hidden-text-left delay-400">
+                    <div class="position-relative">
+            <div class="info position-absolute start-50 d-flex justify-content-center flex-column align-items-center p-5 top-50 translate-middle z-2 " style="width: calc(100% - 40px) ;height: calc(100% - 40px ); background-color: white;">
+              <div class="header d-flex gap-3 justify-content-start align-items-center">
+                <a class="item" href="images/fullwidth-gallery-7-420x350.jpg">
+                  <img src="images/fullwidth-gallery-7-420x350.jpg" style="display: none;" alt="">
+                  <i class="fa-solid fa-magnifying-glass-plus fs-3"></i></a>
+                <h5 class="greenhover"> 29 WATER LN</h5>
+              </div>
+              <p class="text-secondary text-start py-3">We work hard on every project to deliver top-notch interior design concepts that satisfy your wishes.
+              </p>
+            </div>
+            <img src="images/fullwidth-gallery-7-420x350.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="last-grid-item OFFICES col-12 col-md-6 col-lg-4 col-xxl-3 hidden-text-left delay-600" >
+          <div class="position-relative">
+            <div class="info position-absolute start-50 d-flex justify-content-center flex-column align-items-center p-5 top-50 translate-middle z-2 " style="width: calc(100% - 40px) ;height: calc(100% - 40px ); background-color: white;">
+              <div class="header d-flex gap-3 justify-content-start align-items-center">
+                <a class="item" href="images/fullwidth-gallery-8-420x350.jpg">
+                  <img src="images/fullwidth-gallery-8-420x350.jpg" style="display: none;" alt="">
+                  <i class="fa-solid fa-magnifying-glass-plus fs-3"></i></a>
+                <h5 class="greenhover" > 379 HARVEY RD</h5>
+              </div>
+              <p class="text-secondary text-start py-3">We work hard on every project to deliver top-notch interior design concepts that satisfy your wishes.
+              </p>
+            </div>
+            <img src="images/fullwidth-gallery-8-420x350.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Last Projects -->
+    <!-- Start Year Experiences -->
+      <div class="experience container justify-content-center my-5">
+        <div class="row justify-content-center pb-3 pt-5 ">
+          <div class="number col-lg-4  col-12 d-flex justify-content-center teko-font   ">
+            <span data-number="10" >0</span>
+          </div>
+          <div class="info col-lg-4  col-12 position-relative ps-5 py-5 py-lg-1 ">
+            <div class=" teko-font fw-light display-5 ps-4 position-relative" style="text-align: left;" >YEARS OF <div>EXPERIENCE</div></div>
+            <div class="text-secondary fw-ligh py-3 w-75 " style="text-align: left; font-size: 18px;">Creator is a renowned interior design studio established in 2008. We create new interiors for homes and offices.</div>
+            <div class="buttomstyleone">GET ON TOUCH</div>
+          </div>
+          <div class="numbers col-lg-4 col-12  ">
+            <div class="row  gap-3 justify-content-center">
+              <div class="k col-5 d-flex justify-content-center flex-column align-items-center ">
+                <div class="teko-font fw-light" ><span class="num" data-number="2" style="font-size: 150px; line-height: 0.8;">0</span><span class="display-1">k</span></div>
+                <div class="text-secondary teko-font" style="font-size: 18px;">INTERIORS</div>
+              </div>
+              <div class="k col-5 d-flex justify-content-center flex-column align-items-center ">
+                <div class="teko-font fw-light" ><span class="num" data-number="40" style="font-size: 150px; line-height: 0.8;">0</div>
+                <div class="text-secondary teko-font" style="font-size: 18px;">MONTHLY DESIGNS</div>
+              </div>
+              <div class="k col-5 mt-5 d-flex justify-content-center flex-column align-items-center ">
+                <div class="teko-font fw-light" ><span class="num" data-number="12" style="font-size: 150px; line-height: 0.8;">0</div>
+                <div class="text-secondary teko-font" style="font-size: 18px;">AWARDS</div>
+              </div>
+              <div class="k col-5 mt-5 d-flex justify-content-center flex-column align-items-center ">
+                <div class="teko-font fw-light" ><span class="num" data-number="26" style="font-size: 150px; line-height: 0.8;">0</div>
+                <div class="text-secondary teko-font" style="font-size: 18px;">EMPLOYEES</div>
+              </div>
+            </div>
+          </div>
+          <div class="brandss row my-5 justify-content-between">
+            <div class="brands col-xl-3 col-md-6 col-12 px-3  " 
+            data-sal="slide-right"
+            data-sal-delay="0"
+            data-sal-duration="1000"
+            >
+              <div class="text-center"><img class="img-fluid" src="images/clients-9-270x117.png" alt=""></div>
+            </div>
+            <div class="brands col-xl-3 col-md-6 col-12 px-3 " 
+            data-sal="slide-right"
+            data-sal-delay="200"
+            data-sal-duration="1000"
+            >
+              <div class="text-center"><img class="img-fluid" src="images/clients-10-270x117.png" alt=""></div>
+            </div>
+            <div class="brands col-xl-3 col-md-6 col-12 px-3 " 
+            data-sal="slide-right"
+            data-sal-delay="400"
+            data-sal-duration="1000"
+            >
+              <div class="text-center"><img class="" src="images/clients-11-270x117.png" alt=""></div>
+            </div>
+            <div class="brands col-xl-3 col-md-6 col-12 px-3 " 
+            data-sal="slide-right"
+            data-sal-delay="600"
+            data-sal-duration="1000"
+            >
+              <div class="text-center"><img class="img-fluid" src="images/clients-12-270x117.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- End Year Experiences -->
+    <!-- Start team work -->
+      <div class="TeamWork custom-container row my-5 justify-content-center" style="overflow: hidden;">
+        <div class="display-4 text-center teko-font my-5 fw-light pt-3">DIFFERENT PEOPLE — ONE MISSION</div>
+        <div class="col-12 col-md-6 col-lg-3 px-3" 
+        data-sal="slide-left"
+            data-sal-delay="0"
+            data-sal-duration="1000"
+            >
+          <div class="img-container " style="width: fit-content;">
+            <div class="title text-start">
+              <h3 class="teko-font  mb-0">RYAN WILSON</h3 >
+              <p>Founder, Senior Designer</p>
+            </div>
+            <img src="images/team-11-420x424.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 px-3" 
+        data-sal="slide-left"
+            data-sal-delay="200"
+            data-sal-duration="1000"
+            >
+          <div class="img-container " style="width: fit-content;">
+            <div class="title text-start">
+              <h3 class="teko-font mb-0">JILL PETERSON</h3 >
+              <p>Architect</p>
+            </div>
+            <img src="images/team-12-420x424.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 px-3" 
+        data-sal="slide-left"
+            data-sal-delay="400"
+            data-sal-duration="1000"
+            >
+          <div class="img-container " style="width: fit-content;">
+            <div class="title text-start">
+              <h3 class="teko-font  mb-0">SAM ROBINSON</h3 >
+              <p>Senior Architect</p>
+            </div>
+            <img src="images/team-13-420x424.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 px-3 pb-5 " 
+        data-sal="slide-left"
+            data-sal-delay="600"
+            data-sal-duration="1000"
+            >
+            <div class="img-container " style="width: fit-content;">
+              <div class="title text-start">
+                <h3 class="teko-font  mb-0">MARY LEE</h3 >
+                  <p>Decorators</p>
+                </div>
+                <img src="images/team-14-420x424.jpg" class="mx-auto d-block img-fluid" alt="">
+              </div>
+        </div>
+      </div>
+      <!-- end team work -->
+      <!-- Start Dream  -->
+      <div class="dream  custom-container row my-5 text-start pb-5 pt-3 justify-content-center " style="overflow: hidden;">
+      <div class="col-12 col-md-6 py-sm-5" style="padding: 0px 150px;" 
+      data-sal="slide-right"
+      data-sal-delay="0"
+      data-sal-duration="1000"
+      >
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="teko-font fs-1 nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#STARTING" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">01</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="teko-font fs-1 nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#DEVELOPING" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">02</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class=" teko-font fs-1 nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#WORKING" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">03</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class=" teko-font fs-1 nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#ACHIEVING" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" >04</button>
+          </li>
+        </ul>
+        <div class="tab-content " id="myTabContent"  >
+          <div class="tab-pane fade show active" id="STARTING" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <h3 class="teko-font my-3">STARTING WITH THE RIGHT IDEA</h3>
+            <p class="">Every project we create starts with an idea, which eventually grows into a great design. But before it does, our team proposes several variants to choose from.</p>
+            <div class="buttons d-flex justify-content-start gap-3 align-items-center py-3 " style="letter-spacing: 3px;">
+              <div class="buttomstyleone teko-font fs-5 ">GET ON TOUCH</div>
+              <div class="buttomstyletwo teko-font fs-5 ">DOWNLOAD PRESENTATION</div>
+            </div>
+          </div>
+          <div class="tab-pane fade show " style="width: fit-content"id="DEVELOPING" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <h3 class="teko-font my-3">DEVELOPING THE INITIAL CONCEPT</h3>
+            <p class="">After choosing the right design idea, our team members cooperate with you to create the initial concept, which will be a prototype of your final interior design.</p>
+            <div class="buttons d-flex justify-content-start gap-3 align-items-center py-3 " style="letter-spacing: 3px;">
+              <div class="buttomstyleone teko-font fs-5 ">GET ON TOUCH</div>
+              <div class="buttomstyletwo teko-font fs-5 ">DOWNLOAD PRESENTATION</div>
+            </div>
+          </div>
+          <div class="tab-pane fade show " style="width: fit-content"id="WORKING" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <h3 class="teko-font my-3">WORKING ON INTERIOR DESIGN IMPLEMENTATION</h3>
+            <p class="">After completion of the previous stage, we move on to effectively implementing our project and creating a more sophisticated and elegant interior design for your home </p>
+            <div class="buttons d-flex justify-content-start gap-3 align-items-center py-3 " style="letter-spacing: 3px;">
+              <div class="buttomstyleone teko-font fs-5 ">GET ON TOUCH</div>
+              <div class="buttomstyletwo teko-font fs-5 ">DOWNLOAD PRESENTATION</div>
+            </div>
+          </div>
+          <div class="tab-pane fade show "style="width: fit-content" id="ACHIEVING" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <h3 class="teko-font mt-4 mb-0">ACHIEVING THE FINAL RESULT</h3>
+            <p class="" style="font-size: 16px;">Finally, we discuss what you like and don’t like in your new interior and try to make sure everything is done the way it should be.</p>
+            <div class="buttons d-flex justify-content-start gap-3 align-items-center py-3 " style="letter-spacing: 3px;">
+              <div class="buttomstyleone teko-font fs-5 ">GET ON TOUCH</div>
+              <div class="buttomstyletwo teko-font fs-5 ">DOWNLOAD PRESENTATION</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 image-dream col-md-6 p-3" style="width: fit-content;" 
+      data-sal="slide-up"
+      data-sal-delay="0"
+      data-sal-duration="1000"
+      >
+        <div class="image-container text-center position-relative" style="width: fit-content;">
+          <img src="images/index-2-556x434.jpg" class="img-fluid postion-relative" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- End Dream  -->
+    <!-- Start PEOPLE SAY -->
+    <div class="say custom-container my-5  " style="overflow: hidden ;">
+      <div class="display-4 text-center teko-font my-5 pt-3 fw-light">WHAT PEOPLE SAY</div>
+      <div class="row my-3 g-row-6" >
+        <div class="col-12 col-md-6 col-xl-4 text-start px-2 my-3 " 
+        data-sal="slide-left"
+        data-sal-delay="0"
+        data-sal-duration="1000"
+        >
+          <div class="px-5 py-3 position-relative">
+            <div class="d-flex justify-content-start align-items-center ">
+              <div class="text-center">
+                <img src="images/user-11-75x75.jpg" alt="" class="img-fluid rounded-circle me-5">
+              </div>
+              <div class="name ">
+                <h4 class="teko-font greenhover">CATHERINE WILLIAMS</h4>
+                <h6 class="" style="color: #eb6e6e ;">Local shop owner</h6>
+              </div>
+            </div>
+            <p class="py-3">I chose Creator because of their knowledge, experience and attention to detail that has proven invaluable to me in creating a superior finished project, which attracts more clients to my shop.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 text-start px-2 my-3"
+        data-sal="slide-left"
+        data-sal-delay="200"
+        data-sal-duration="1000"
+        
+        >
+          <div class="px-5 py-3 position-relative">
+            <div class="d-flex justify-content-start align-items-center ">
+              <div class="text-center">
+                <img src="images/user-12-75x75.jpg" alt="" class="img-fluid rounded-circle me-5">
+              </div>
+              <div class="name ">
+                <h4 class="teko-font greenhover">RUPERT WOOD</h4>
+                <h6 class="" style="color: #eb6e6e ;">House owner</h6>
+              </div>
+            </div>
+            <p class="py-3">This agency was highly recommended to me. The sensitivity, knowledge, vision and ultimate execution this firm brought to the table was tremendous. Thank you for the amazing interior!</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 text-start px-2 my-3 pb-5"
+        data-sal="slide-left"
+        data-sal-delay="400"
+        data-sal-duration="1000"
+         >
+          <div class="px-5 py-3 position-relative">
+            <div class="d-flex justify-content-start align-items-center ">
+              <div class="text-center">
+                <img src="images/user-20-75x75.jpg" alt="" class="img-fluid rounded-circle me-5">
+              </div>
+              <div class="name ">
+                <h4 class="teko-font greenhover">SAMANTHA BROWN</h4>
+                <h6  style=" color: #eb6e6e ;">Freelancer</h6>
+              </div>
+            </div>
+            <p class="py-3">Your professional guidance gave me results that far exceeded my expectations. My clients thoroughly enjoy the fun, relaxing ambience that the interior design creates. Thank you!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End PEOPLE SAY -->
+    <!-- Start BLog -->
+      <div class="blog container my-5">
+        <div class="display-4 text-center teko-font my-5 fw-light" style="letter-spacing: 2px; ">LATEST BLOG POSTS</div>
+        <div class="row pb-5 pt-3 " style="overflow: hidden;">
+          <div class="col-lg-4 col-md-6 col-12 px-4 py-4 py-md-1 "
+          data-sal="slide-right"
+          data-sal-delay="0"
+          data-sal-duration="1000"
+          >
+            <div class="card" >
+              <div class="card-img-top position-relative">
+                <img src="images/post-10-370x307.jpg" class="card-img-top" alt="...">
+                <div class="number py-2 px-4 teko-font position-absolute ">
+                  <span class="display-4 ">04 <span class=" display-6">July</span></span>
+                </div>
+              </div>
+              <div class="card-body text-start my-2">
+                <h4 class="card-title teko-font">DESIGNING A CHILDREN’S ROOM</h4>
+                <p class="card-text text-secondary fs-6">Kids’ bedrooms aren’t usually noted for their sophisticated style. But it’s not a bad idea to design a room that your kid can grow into...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 px-4 py-4 py-md-1 " 
+          data-sal="slide-right"
+          data-sal-delay="200"
+          data-sal-duration="1000"
+          >
+            <div class="card" >
+              <div class="card-img-top"><img src="images/post-11-370x307.jpg" class="card-img-top" alt="..."></div>
+              <div class="card-body text-start my-2">
+                <h4 class="card-title teko-font">HOME DECOR TRENDS</h4>
+                <p class="card-text text-secondary fs-6">Trends are so hard to keep up with. Ever-changing, contradictory, and sometimes seemingly senseless, no one can stay perfectly up to...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 px-4 py-4 py-md-1" 
+          data-sal="slide-right"
+          data-sal-delay="400"
+          data-sal-duration="1000"
+          >
+            <div class="card" >
+              <div class="card-img-top"><img src="images/post-12-370x307.jpg" class="card-img-top" alt="..."></div>
+              <div class="card-body text-start my-2">
+                <h4 class="card-title teko-font">BEDROOM SPACE MANAGEMENT</h4>
+                <p class="card-text text-secondary fs-6 pt-0 text-center">Any sleep enthusiast would agree that the bedroom is pretty high up on the list of most important rooms in the house. There’s even...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- End BLog -->
+    <!-- Start Contact  -->
+    <div class="contact custom-container my-5">
+      <div class="row gy-3 justify-content-center pt-3 pb-5 " style="overflow: hidden;">
+
+        <div class="col-12 col-md-6 col-lg-4 px-md-2 px-0  " 
+>
+          <div class="address h-100 bg-dark text-start" style="">
+              <img class="my-3" src="images/logo-inverse-229x43.png" alt="">
+              <p class="black-font mb-3">Our design studio helps clients make wise decisions and avoid costly mistakes. Allow our designers and architectors to make your dream space a reality.</p>
+              <div class=" border-bottom d-flex pt-3 pb-4" style="border-color: gray;">
+                <span class='me-4 teko-font fs-5' style="color: #50ba87;">ADDRESS</span>
+                <span class="redhover text-light ">4730 Crystal Springs Dr, Los Angeles, CA 90027</span>
+              </div>
+              <div class="border-bottom pt-3 d-flex pb-4 " style="border-color: gray;">
+                <span class='me-4 teko-font fs-5' style="color: #50ba87;">PHONES</span>
+                <span>
+                  <span class="redhover text-light me-2 ">+1 323-913-4688,</span>
+                  <span class="redhover text-light "> +1 323-888-4554</span>
+                </span>
+            </div>
+            <div class="border-bottom pt-3 d-flex pb-4" style="border-color: gray;">
+              <span class='me-4 teko-font fs-5' style="color: #50ba87;">E-MAILS</span>
+              <span><span class="redhover text-light me-2 ">info@demolink.org, </span>
+              <span class="redhover text-light "> mail@demolink.org</span></span>
+            </div>
+            <div class="d-flex justify-content-start align-item-center p-3">
+              <div class="icon rounded-circle  me-3">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="icon rounded-circle  me-3">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="icon rounded-circle  me-3">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </div>
+              <div class="icon rounded-circle ">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 px-md-2 px-0  " 
+>
+          <div class="address h-100 bg-dark text-start">
+            <div class="fs-1 teko-font black-font" style="letter-spacing: 3px;">QUESTIONS? CONTACT US</div>
+            <input class="form-control bg-secondary form-control-lg my-3 py-3 px-3 " type="text" placeholder="Name">
+            <input class="form-control bg-secondary form-control-lg my-3 py-3 px-3 " type="text" placeholder="E-Mail">
+            <textarea class="form-control bg-secondary form-control-lg" rows="5" placeholder="Message"></textarea>
+            <div class="buttom  p-3  mt-4 w-100 text-center " type = 'submit'>Send Message</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 px-md-2 px-0 "
+>
+          <div class="address h-100 bg-dark text-start">
+            <div class="fs-1 teko-font black-font border-bottom"  style="border-color: gray; letter-spacing: 3px;">SEE HOW WE WORK</div>
+            <h4 class=" teko-font border-bottom text-light py-3 position-relative greenhover hover-letter-spacing"  style="border-color: gray;">HOME DESIGN</h4>
+            <h4 class=" teko-font border-bottom text-light py-3 position-relative greenhover hover-letter-spacing"  style="border-color: gray;">COMMERCIAL DESIGN</h4>
+            <h4 class=" teko-font border-bottom text-light py-3 position-relative greenhover hover-letter-spacing"  style="border-color: gray;">OFFICE DESIGN</h4>
+            <h4 class=" teko-font border-bottom text-light py-3 position-relative greenhover hover-letter-spacing"  style="border-color: gray;">CONSULTATIONS</h4>
+            <h4 class=" teko-font border-bottom text-light py-3 position-relative greenhover hover-letter-spacing"  style="border-color: gray;">ARCHITECT SERVICES</h4>
+          </div>
+        </div>
+
+      </div>
+      <div class="teko greenhover fs-6 fw-semibold pt-0 text-center">© <span class="year"></span> Creator. All rights reserved. Design by TemplateMonster</div>
+    </div>
+    <!-- End Contact  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ****************************************************************************************************************************** -->
+
+    <!-- Start the sidebar componenet -->
+    <div
+      class="offcanvas offcanvas-start"
+      style="margin-top: 102px !important ; transition: 0.5s"
+      data-bs-scroll="false"
+      data-bs-keyboard="false"
+      data-bs-backdrop="false"
+      tabindex="-1"
+      id="offcanvas"
+      aria-labelledby="offcanvasScrollingLabel"
+    >
+      <div class="offcanvas-body p-0">
+        <ul
+          class="ulss mb-2 mb-lg-0 navbar-nav"
+          style="font-size: 20px; line-height: 25px"
+        >
+          <li class="icon m-3">
+            <div class="input-group shadow border-0">
+              <input
+                class="p-2 flex-fill border-0"
+                style="outline: none"
+                type="text"
+              />
+              <button class="btn shadow-none fs-5" type="button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </li>
+          <li class="d-flex justify-content-between m-3 fs-3">
+            <div class="icons d-flex" style="font-size: 25px">
+              <a
+                class="nav-link p-3 text-dark position-relative orangedhover under"
+                aria-current="page"
+                href="#"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                class="nav-link p-3 text-dark position-relative orangedhover under"
+                aria-current="page"
+                href="#"
+              >
+                <i class="fa-solid fa-x"></i>
+              </a>
+              <a
+                class="nav-link p-3 text-dark position-relative orangedhover under"
+                aria-current="page"
+                href="#"
+              >
+                <i class="fa-brands fa-google-plus-g"></i>
+              </a>
+              <a
+                class="nav-link p-3 text-dark position-relative orangedhover under"
+                aria-current="page"
+                href="#"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+            <a
+              class="nav-link p-3 text-dark position-relative greenhover under"
+              aria-current="page"
+              href="#"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+          <hr class="m-2" />
+          <li class="btn greenbghover p-0 mb-2">
+            <a
+              class="nav-link fs-3 p-3 greenbghover active text-dark position-relative under"
+              aria-current="page"
+              href="#"
+            >
+              Home
+            </a>
+          </li>
+          <li class="btn greenbghover p-0 mb-2">
+            <a
+              class="nav-link fs-3 p-3 greenbghover text-dark position-relative under"
+              aria-current="page"
+              href="#"
+            >
+              About Us
+            </a>
+          </li>
+          <li class="btn greenbghover p-0 mb-2">
+            <a
+              class="nav-link fs-3 p-3 greenbghover text-dark position-relative under"
+              aria-current="page"
+              href="#"
+            >
+              Typography
+            </a>
+          </li>
+          <li class="btn greenbghover p-0 mb-2">
+            <a
+              class="nav-link fs-3 p-3 greenbghover text-dark position-relative under"
+              aria-current="page"
+              href="#"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--End the sidebar componenet -->
+
+    <!-- Start the rightsidebar componenet -->
+
+    <div
+      class="offcanvas offcanvas-end bg-light"
+      style="margin-top: 102px !important ; transition: 0.5s"
+      data-bs-scroll="true"
+      data-bs-keyboard="false"
+      data-bs-backdrop="false"
+      tabindex="-1"
+      id="offcanvasright"
+      aria-labelledby="offcanvasScrollingLabel"
+    >
+      <div class="offcanvas-header p-3 justify-content-center">
+        <span class="teko-font text-center fs-1"> OUR WORKS </span>
+      </div>
+      <div class="offcanvas-body position-relative p-0">
+        <ul
+          class="ulss mb-2 mb-lg-0 navbar-nav"
+          style="font-size: 20px; line-height: 25px"
+        >
+          <li>
+            <div class="text-center gallery position-relative" data-image="e-1">
+              <img
+                src="images/gallery-image-1-330x240.jpg"
+                class="rounded img-fluid mx-auto my-3"
+                id="e-1"
+                alt="..."
+              />
+              <div
+                class="overlay rounded position-absolute top-50 start-50 translate-middle z-1"
+              ></div>
+            </div>
+          </li>
+          <li>
+            <div class="text-center gallery position-relative" data-image="e-2">
+              <img
+                src="images/gallery-image-2-330x240.jpg"
+                class="rounded img-fluid mx-auto my-3"
+                id="fullscreenModal2"
+                alt="..."
+              />
+              <div
+                class="overlay rounded position-absolute top-50 start-50 translate-middle z-1"
+              ></div>
+            </div>
+          </li>
+          <li>
+            <div class="text-center gallery position-relative" data-image="e-4">
+              <img
+                src="images/gallery-image-4-330x240.jpg"
+                class="rounded img-fluid mx-auto my-3"
+                id="fullscreenModal3"
+                alt="..."
+              />
+              <div
+                class="overlay rounded position-absolute top-50 start-50 translate-middle z-1"
+              ></div>
+            </div>
+          </li>
+          <li>
+            <div class="text-center gallery position-relative" data-image="e-3">
+              <img
+                src="images/gallery-image-3-330x240.jpg"
+                class="rounded img-fluid mx-auto my-3"
+                id="fullscreenModal3"
+                alt="..."
+              />
+              <div
+                class="overlay rounded position-absolute top-50 start-50 translate-middle z-1"
+              ></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- model of image veiwer  -->
+    <div
+      class="modal fade imgfad"
+      id="imagemodel"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="fullscreenModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content-img"></div>
+      </div>
+    </div>
+    <!-- end model of image veiwer  -->
+    
+    <script src="js/sal.js"></script>
+    <script src="js/isotope.pkgd.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="lightGallery-master/lightGallery-master/dist/lightgallery.umd.js"></script>
+    <script src="lightGallery-master/lightGallery-master/dist/plugins/autoplay/lg-autoplay.umd.js"></script>
+    <script src="lightGallery-master/lightGallery-master/dist/plugins/rotate/lg-rotate.umd.js"></script>
+    <script src="lightGallery-master/lightGallery-master/dist/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+    <script src="lightGallery-master/lightGallery-master/dist/plugins/zoom/lg-zoom.umd.js"></script>
+    <script src="lightGallery-master/lightGallery-master/dist/plugins/share/lg-share.umd.js"></script>
+    <script src="lightGallery-master/lightGallery-master/dist/plugins/fullscreen/lg-fullscreen.umd.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    .barchange svg {
+      transform: translate(-50% , -50% ) !important;
+    }
+    .barchange svg:first-of-type {
+      transition: 0.23s;
+      transform: translate(-50% , -50% ) rotate(0deg) !important;
+      opacity: 1;
+
+    }
+    .barchange svg:last-of-type {
+      transition: 0.30s ;
+      opacity: 0;
+      transform:translate(-50% , -50% ) rotate(-90deg) !important;
+    }
+     .barchange:hover  svg:first-of-type {
+      transform: translate(-50% , -50% ) rotate(90deg) !important;
+      opacity: 0;
+    }
+    .barchange:hover svg:last-child {
+      transform:translate(-50% , -50% )  rotate(0deg) !important;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="position-relative m-5 text-center barchange">
+
+    <i class="fa-solid fa-bars  position-absolute top-50 start-50  "></i>
+    <i class="fa-solid fa-arrow-left  position-absolute top-50 start-50  " ></i>
+  </div>
+
+  <script src="js/all.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html> 
